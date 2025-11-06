@@ -1,0 +1,25 @@
+body {
+  background: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+.orb {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, white 0%, #00ffff 80%);
+  box-shadow: 0 0 60px #00ffff;
+  transition: all 0.4s ease;
+}
+
+.info {
+  margin-top: 20px;
+  text-align: center;
+}
