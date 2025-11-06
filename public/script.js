@@ -1,4 +1,6 @@
-const socket = new WebSocket(`ws://${location.host}`);
+const protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+const socket = new WebSocket(`${protocol}://${location.host}`);
+
 
 const characterEl = document.getElementById("character");
 const statsEl = document.getElementById("stats");
